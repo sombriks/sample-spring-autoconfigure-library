@@ -1,11 +1,11 @@
 package me.sombriks
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
-import org.springframework.boot.runApplication
+import org.springframework.boot.runApplication as runApp
 
 @SpringBootApplication
 class Main
 
 fun main(args: Array<String>) {
-    val runApplication = runApplication<Main>(*args)
+    runApp<Main>(*args)
 }
