@@ -1,0 +1,33 @@
+### list
+GET http://localhost:8080/todos
+Content-Type: application/json
+
+### find one
+GET http://localhost:8080/todos/1
+Content-Type: application/json
+
+### create
+POST http://localhost:8080/todos
+Content-Type: application/json
+
+{
+  "description": "testing"
+}
+
+### update
+PUT http://localhost:8080/todos/1
+Content-Type: application/json
+
+
+{
+  "description": "testing update"
+}
+
+### delete
+DELETE http://localhost:8080/todos/1
+Content-Type: application/json
+
+
+### lib call
+GET http://localhost:8080/todos/xpto
+Content-Type: application/json
