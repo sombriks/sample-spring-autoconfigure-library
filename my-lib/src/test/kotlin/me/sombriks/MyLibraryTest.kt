@@ -14,7 +14,7 @@ class MyLibraryTest {
 
     @Test
     fun `should get prop value`() {
-        Assertions.assertEquals("Hello there!", service.hello())
+        Assertions.assertEquals("Hi from bean!", service.hello())
     }
 
     @Test
@@ -32,10 +32,19 @@ class MyLibraryTest {
     fun `should get default value`() {
         ApplicationContextRunner()
             .withBean(MyLibrary::class.java)
-//            .withPropertyValues("my.config=I'm a genius!")
             .run {
                 var service = it.getBean(MyLibrary::class.java)
-                Assertions.assertEquals("Hi!", service.hello())
+                Assertions.assertEquals("Hi from bean!", service.hello())
+            }
+    }
+
+    @Test
+    fun `should get value from configuration factory`() {
+        ApplicationContextRunner()
+            .withUserConfiguration(MyConfig::class.java)
+            .run {
+                var service = it.getBean(MyLibrary::class.java)
+                Assertions.assertEquals("Hello from config!", service.hello())
             }
     }
 }

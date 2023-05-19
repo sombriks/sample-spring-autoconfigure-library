@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fdc09bd-336f-447a-8e82-4805ab89d05e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/my-lib/src/main/resources/my-library.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/kotlin/requests.http" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/resources/requests.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/kotlin/me/sombriks/UsingTheLibraryTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/kotlin/me/sombriks/UsingTheLibraryTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-lib/src/main/kotlin/me/sombriks/MyLibrary.kt" beforeDir="false" afterPath="$PROJECT_DIR$/my-lib/src/main/kotlin/me/sombriks/MyLibrary.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-lib/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-lib/src/test/kotlin/me/sombriks/MyLibraryTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/my-lib/src/test/kotlin/me/sombriks/MyLibraryTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +66,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reactor",
+    "spring.configuration.checksum": "46cbea6baa7e2f08803132ec4d565ecf",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -87,13 +93,7 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.UsingTheLibraryTest">
-    <configuration name="requests | delete" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/app/src/test/kotlin/requests.http" index="5" requestIdentifier="delete" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="requests | lib call" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/app/src/test/kotlin/requests.http" index="6" requestIdentifier="lib call" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="requests | list" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/app/src/test/kotlin/requests.http" requestIdentifier="list" runType="Run single request">
+    <configuration name="requests | update" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/app/src/test/resources/requests.http" index="4" requestIdentifier="update" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="MyLibraryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -107,6 +107,22 @@
       <option name="PACKAGE_NAME" value="me.sombriks" />
       <option name="MAIN_CLASS_NAME" value="me.sombriks.MyLibraryTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyLibraryTest.should get value from configuration factory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="my-lib" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="me.sombriks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="me.sombriks" />
+      <option name="MAIN_CLASS_NAME" value="me.sombriks.MyLibraryTest" />
+      <option name="METHOD_NAME" value="should get value from configuration factory" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -126,6 +142,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UsingTheLibraryTest.should get autoconfigured value" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="me.sombriks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="me.sombriks" />
+      <option name="MAIN_CLASS_NAME" value="me.sombriks.UsingTheLibraryTest" />
+      <option name="METHOD_NAME" value="should get autoconfigured value" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="app" />
@@ -136,9 +168,9 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="HTTP Request.requests | delete" />
-      <item itemvalue="HTTP Request.requests | lib call" />
-      <item itemvalue="HTTP Request.requests | list" />
+      <item itemvalue="HTTP Request.requests | update" />
+      <item itemvalue="JUnit.MyLibraryTest.should get value from configuration factory" />
+      <item itemvalue="JUnit.UsingTheLibraryTest.should get autoconfigured value" />
       <item itemvalue="JUnit.UsingTheLibraryTest" />
       <item itemvalue="JUnit.MyLibraryTest" />
       <item itemvalue="Spring Boot.Main" />
@@ -146,10 +178,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.UsingTheLibraryTest" />
+        <item itemvalue="JUnit.UsingTheLibraryTest.should get autoconfigured value" />
         <item itemvalue="JUnit.MyLibraryTest" />
-        <item itemvalue="HTTP Request.requests | lib call" />
-        <item itemvalue="HTTP Request.requests | list" />
-        <item itemvalue="HTTP Request.requests | delete" />
+        <item itemvalue="JUnit.MyLibraryTest.should get value from configuration factory" />
+        <item itemvalue="HTTP Request.requests | update" />
       </list>
     </recent_temporary>
   </component>
@@ -161,7 +193,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1684423974965</updated>
-      <workItem from="1684423976354" duration="17459000" />
+      <workItem from="1684423976354" duration="18618000" />
+      <workItem from="1684499130270" duration="4328000" />
     </task>
     <servers />
   </component>

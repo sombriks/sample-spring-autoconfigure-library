@@ -17,10 +17,9 @@ class UsingTheLibraryTest {
     fun `should get default value since there is no config`(){
         ApplicationContextRunner()
             .withBean(MyLibrary::class.java)
-//            .withPropertyValues("my.config=I'm a genius!")
             .run {
                 var service = it.getBean(MyLibrary::class.java)
-                Assertions.assertEquals("Hi!", service.hello())
+                Assertions.assertEquals("Hi from bean!", service.hello())
             }
     }
 
