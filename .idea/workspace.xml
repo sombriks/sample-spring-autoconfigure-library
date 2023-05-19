@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fdc09bd-336f-447a-8e82-4805ab89d05e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/my-lib/src/main/resources/my-library.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/kotlin/me/sombriks/UsingTheLibraryTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/kotlin/me/sombriks/UsingTheLibraryTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-lib/src/main/kotlin/me/sombriks/MyLibrary.kt" beforeDir="false" afterPath="$PROJECT_DIR$/my-lib/src/main/kotlin/me/sombriks/MyLibrary.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-lib/src/main/resources/application.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/my-lib/src/test/kotlin/me/sombriks/MyLibraryTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/my-lib/src/test/kotlin/me/sombriks/MyLibraryTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -178,8 +173,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.UsingTheLibraryTest" />
-        <item itemvalue="JUnit.UsingTheLibraryTest.should get autoconfigured value" />
         <item itemvalue="JUnit.MyLibraryTest" />
+        <item itemvalue="JUnit.UsingTheLibraryTest.should get autoconfigured value" />
         <item itemvalue="JUnit.MyLibraryTest.should get value from configuration factory" />
         <item itemvalue="HTTP Request.requests | update" />
       </list>
@@ -194,7 +189,7 @@
       <option name="presentableId" value="Default" />
       <updated>1684423974965</updated>
       <workItem from="1684423976354" duration="18618000" />
-      <workItem from="1684499130270" duration="4328000" />
+      <workItem from="1684499130270" duration="4846000" />
     </task>
     <servers />
   </component>

@@ -13,12 +13,13 @@ class MyLibraryTest {
     private lateinit var service: MyLibrary
 
     @Test
-    fun `should get prop value`() {
+    fun `should get alternative value from bean`() {
+        // autoconfigure obviously doesn't work from inside the library itself
         Assertions.assertEquals("Hi from bean!", service.hello())
     }
 
     @Test
-    fun `should get alternative value`() {
+    fun `should get alternative value from property override`() {
         ApplicationContextRunner()
             .withBean(MyLibrary::class.java)
             .withPropertyValues("my.config=I'm a genius!")
@@ -29,22 +30,23 @@ class MyLibraryTest {
     }
 
     @Test
-    fun `should get default value`() {
-        ApplicationContextRunner()
-            .withBean(MyLibrary::class.java)
-            .run {
-                var service = it.getBean(MyLibrary::class.java)
-                Assertions.assertEquals("Hi from bean!", service.hello())
-            }
-    }
-
-    @Test
-    fun `should get value from configuration factory`() {
+    fun `should get value from properties file through configuration factory`() {
         ApplicationContextRunner()
             .withUserConfiguration(MyConfig::class.java)
             .run {
                 var service = it.getBean(MyLibrary::class.java)
-                Assertions.assertEquals("Hello from config!", service.hello())
+                Assertions.assertEquals("Hello there!", service.hello())
+            }
+    }
+
+    @Test
+    fun `should get alternative value from property override through configuration factory`() {
+        ApplicationContextRunner()
+            .withUserConfiguration(MyConfig::class.java)
+            .withPropertyValues("my.config=General Kenobi!")
+            .run {
+                var service = it.getBean(MyLibrary::class.java)
+                Assertions.assertEquals("General Kenobi!", service.hello())
             }
     }
 }

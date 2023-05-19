@@ -38,4 +38,14 @@ class UsingTheLibraryTest {
     fun `should get autoconfigured value`() {
         Assertions.assertEquals("Hello there!", service.hello())
     }
+
+    @Test
+    fun `should get value from explicitly configured bean`(){
+        ApplicationContextRunner()
+            .withUserConfiguration(MyConfig::class.java)
+            .run {
+                var service = it.getBean(MyLibrary::class.java)
+                Assertions.assertEquals("Hello there!", service.hello())
+            }
+    }
 }
